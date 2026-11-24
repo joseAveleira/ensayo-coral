@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ensayo coral · Ave verum corpus</title>
+  <meta name="description" content="Comprueba si llegas a las notas de tu cuerda y ensaya afinando con el micrófono sobre las otras voces del Ave verum corpus de Mozart.">
+  <meta name="theme-color" content="#171b2b">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Grenze:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<!--
+THESIS: tu voz es la luz que enciende los cristales de tu cuerda. Rechaza el afinador oscuro con neón y el papel crema con serifa "de música clásica".
+OWN-WORLD: piedra clara y fría; plomo azul negro en filetes de 2-3 px; cuatro vidrios saturados (rubí, ámbar, esmeralda, cobalto), uno por cuerda; ventanas oscuras abiertas en la página; el estado es cristal apagado o encendido, nunca rojo/verde.
+STORY: mide tu voz, mira qué cuerda te encaja, ensáyala viendo cómo tu voz enciende cada nota.
+FIRST VIEWPORT: a la izquierda la pregunta y el botón "Probar mi voz"; a la derecha cuatro ventanales ojivales (S, A, T, B) con un cristal por cada nota que pide cada cuerda.
+FORM: vidriera, candidata 3 de 7; seed 89ef5237.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+
+<svg class="oculto" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-micro" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></symbol>
+    <symbol id="i-pausa" viewBox="0 0 24 24"><path d="M8.5 5.5v13M15.5 5.5v13" stroke-width="3"/></symbol>
+    <symbol id="i-inicio" viewBox="0 0 24 24"><path d="M6 5.5v13"/><path d="M19 6v12l-9.5-6z" fill="currentColor"/></symbol>
+    <symbol id="i-altavoz" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4z"/><path d="M15.5 9.2a4.5 4.5 0 0 1 0 5.6M18 6.6a8 8 0 0 1 0 10.8"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-arriba" viewBox="0 0 24 24"><path d="M12 19V5M5.5 11.5L12 5l6.5 6.5"/></symbol>
+    <symbol id="i-abajo" viewBox="0 0 24 24"><path d="M12 5v14M5.5 12.5L12 19l6.5-6.5"/></symbol>
+    <symbol id="i-raya" viewBox="0 0 24 24"><path d="M6 12h12"/></symbol>
+    <symbol id="i-menos" viewBox="0 0 24 24"><path d="M6 12h12"/></symbol>
+    <symbol id="i-mas" viewBox="0 0 24 24"><path d="M6 12h12M12 6v12"/></symbol>
+    <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  </defs>
+</svg>
+
+<header class="cabecera">
+  <a class="obra" href="#voz">
+    <svg class="obra__sello" viewBox="0 0 28 40" aria-hidden="true">
+      <path class="sello__marco" d="M2 38V17A15 15 0 0 1 14 2a15 15 0 0 1 12 15v21z"/>
+      <path class="sello__s" d="M5 17.5A12 12 0 0 1 14 5.6V17.5z"/>
+      <path class="sello__a" d="M14 5.6a12 12 0 0 1 9 11.9H14z"/>
+      <path class="sello__t" d="M5 19.5h9V35H5z"/>
+      <path class="sello__b" d="M14 19.5h9V35h-9z"/>
+    </svg>
+    <span class="obra__texto">
+      <span class="obra__titulo" id="obra-titulo">Ave verum corpus</span>
+      <span class="obra__autor" id="obra-autor">W. A. Mozart · K. 618</span>
+    </span>
+  </a>
+  <nav class="pestanas" aria-label="Secciones">
+    <a class="pestana" href="#voz" data-vista="voz">Mi voz</a>
+    <a class="pestana" href="#ensayo" data-vista="ensayo">Ensayo</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ───────────── Mi voz ───────────── -->
+  <section class="vista vista--voz" data-vista="voz">
+    <div class="voz__texto">
+      <h1>¿Hasta dónde llega tu voz?</h1>
+      <p class="entradilla">Canta dos notas al micrófono y verás en qué cuerda del <em>Ave verum</em> encajas. Después podrás ensayarla con las otras voces sonando de fondo.</p>
+
+      <div class="prueba" id="prueba">
+        <div class="prueba__paso" data-para="reposo">
+          <div class="fila-botones">
+            <button class="boton boton--principal boton--grande" id="btn-probar" type="button">
+              <svg class="icono"><use href="#i-micro"/></svg>Probar mi voz
+            </button>
+            <a class="boton boton--secundario boton--grande" href="#ensayo">Ir al ensayo</a>
+          </div>
+          <p class="letra-chica">El navegador te pedirá permiso para usar el micrófono. Lo que cantes no se graba ni sale de este equipo.</p>
+        </div>
+
+        <div class="prueba__paso" data-para="midiendo" hidden>
+          <h2 id="prueba-titulo" tabindex="-1">Primero, tu nota más grave</h2>
+          <p id="prueba-ayuda">Di «aaa» y ve bajando poco a poco, como una sirena. Cuando llegues a la más grave que te salga cómoda, mantenla un segundo.</p>
+          <div class="lectura">
+            <div class="lectura__nota" id="prueba-nota" aria-hidden="true">—</div>
+            <p class="lectura__marca"><span id="prueba-rotulo">La más grave hasta ahora</span> <strong id="prueba-marca" aria-live="polite">ninguna</strong></p>
+            <div class="nivel" title="Volumen que recibe el micrófono"><div class="nivel__barra" id="prueba-nivel"></div></div>
+          </div>
+          <div class="fila-botones">
+            <button class="boton boton--principal" id="btn-siguiente" type="button" disabled>Listo, siguiente</button>
+            <button class="boton boton--secundario" id="btn-borrar" type="button">Borrar y repetir</button>
+            <button class="boton boton--texto" id="btn-cancelar" type="button">Cancelar</button>
+          </div>
+        </div>
+
+        <div class="prueba__paso" data-para="hecho" hidden>
+          <p class="resultado" id="res-rango" tabindex="-1">Tu voz va de <strong>—</strong> a <strong>—</strong>.</p>
+          <p id="res-consejo"></p>
+          <div class="fila-botones">
+            <a class="boton boton--principal boton--grande" id="btn-ensayar-mejor" href="#ensayo">Ensayar</a>
+            <button class="boton boton--secundario boton--grande" id="btn-repetir" type="button">Repetir la prueba</button>
+          </div>
+        </div>
+
+        <p class="aviso" id="prueba-aviso" role="alert" hidden></p>
+      </div>
+    </div>
+
+    <div class="ventanal">
+      <p class="leyenda">
+        <span class="leyenda__frase">Un ventanal por cuerda y un cristal por cada nota que canta.</span>
+        <span class="leyenda__item"><span class="cristalito cristalito--apagado"></span>apagado: nota que pide la cuerda</span>
+        <span class="leyenda__item"><span class="cristalito cristalito--encendido"></span>encendido: nota a la que llegas</span>
+      </p>
+      <div class="nombres" id="nombres"></div>
+      <div class="ventanal__dibujo" id="ventanal-dibujo" role="img" aria-label="Cuatro ventanales, uno por cuerda, con las notas que pide cada una"></div>
+      <div class="fichas" id="fichas"></div>
+    </div>
+  </section>
+
+  <!-- ───────────── Ensayo ───────────── -->
+  <section class="vista vista--ensayo" data-vista="ensayo" id="vista-ensayo" hidden>
+    <div class="barra">
+      <h1>Ensaya tu cuerda</h1>
+      <fieldset class="cuerdas" id="selector-cuerda">
+        <legend class="solo-lectores">Tu cuerda</legend>
+      </fieldset>
+    </div>
+
+    <p class="aviso" id="ensayo-aviso" role="alert" hidden></p>
+
+    <div class="escenario">
+      <canvas id="rollo" role="img" aria-label="Partitura en movimiento: las notas de tu cuerda y la línea de tu voz"></canvas>
+      <p class="entrada" id="entrada" aria-hidden="true" hidden><svg class="icono"><use id="entrada-icono" href="#i-altavoz"/></svg><span id="entrada-texto"></span></p>
+    </div>
+
+    <p class="letra" id="letra" lang="la"></p>
+
+    <div class="marcador" id="marcador" data-estado="escucha">
+      <div class="dato">
+        <span class="dato__rotulo" id="rotulo-pedida">Tu próxima nota</span>
+        <span class="dato__valor" id="nota-pedida">—</span>
+        <button class="boton boton--chico boton--secundario" id="btn-oir" type="button"><svg class="icono"><use href="#i-altavoz"/></svg>Oír la nota</button>
+      </div>
+      <div class="marcador__centro">
+        <p class="veredicto" id="veredicto" role="status"><svg class="icono"><use id="veredicto-icono" href="#i-altavoz"/></svg><span id="veredicto-texto">Escucha</span></p>
+        <div class="afinador" aria-hidden="true">
+          <span class="afinador__extremo">bajo</span>
+          <div class="afinador__carril"><div class="afinador__zona" id="afinador-zona"></div><div class="afinador__aguja" id="afinador-aguja"></div></div>
+          <span class="afinador__extremo">alto</span>
+        </div>
+        <p class="pasada" id="pasada" hidden></p>
+      </div>
+      <div class="dato dato--derecha">
+        <span class="dato__rotulo">Tu voz</span>
+        <span class="dato__valor" id="nota-cantada">—</span>
+        <div class="micro">
+          <span class="dato__rotulo">Volumen del micro</span>
+          <div class="nivel"><div class="nivel__barra" id="ensayo-nivel"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mandos">
+      <button class="boton boton--principal boton--grande" id="btn-reproducir" type="button">
+        <svg class="icono"><use id="reproducir-icono" href="#i-play"/></svg><span id="reproducir-texto">Empezar</span>
+      </button>
+      <button class="boton boton--secundario boton--grande" id="btn-principio" type="button"><svg class="icono"><use href="#i-inicio"/></svg>Al principio</button>
+    </div>
+
+    <div class="opciones">
+      <label class="campo campo--frase">
+        <span class="campo__rotulo">Frase</span>
+        <select id="selector-frase"></select>
+      </label>
+      <label class="casilla"><input type="checkbox" id="chk-bucle"><span>Repetir esta frase</span></label>
+      <label class="casilla"><input type="checkbox" id="chk-todas"><span>Ver las cuatro voces</span></label>
+
+      <div class="campo campo--rango">
+        <label class="campo__rotulo" for="rng-tempo">Velocidad <output id="out-tempo" for="rng-tempo"></output></label>
+        <input type="range" id="rng-tempo" min="40" max="84" step="2">
+      </div>
+
+      <fieldset class="segmentos" id="mi-voz-suena">
+        <legend class="campo__rotulo">Mi cuerda suena</legend>
+        <label><input type="radio" name="mi-voz" value="fuerte"><span>Fuerte</span></label>
+        <label><input type="radio" name="mi-voz" value="suave"><span>Suave</span></label>
+        <label><input type="radio" name="mi-voz" value="callada"><span>Callada</span></label>
+      </fieldset>
+    </div>
+
+    <section class="resumen" id="resumen" aria-labelledby="resumen-titulo" hidden>
+      <h2 id="resumen-titulo" tabindex="-1"></h2>
+      <p id="resumen-consejo"></p>
+      <ol class="resumen__frases" id="resumen-frases"></ol>
+    </section>
+
+    <details class="ajustes">
+      <summary><svg class="icono"><use href="#i-flecha"/></svg>Más ajustes</summary>
+      <div class="ajustes__rejilla">
+        <fieldset class="ajuste">
+          <legend>Qué más suena</legend>
+          <div class="ajuste__casillas" id="otras-voces"></div>
+          <label class="casilla"><input type="checkbox" id="chk-claqueta"><span>Claqueta (un clic en cada pulso)</span></label>
+        </fieldset>
+
+        <fieldset class="ajuste">
+          <legend>Tono de la obra</legend>
+          <div class="paso-a-paso">
+            <button class="boton boton--secundario boton--cuadrado" id="btn-tono-menos" type="button" aria-label="Bajar un semitono"><svg class="icono"><use href="#i-menos"/></svg></button>
+            <output id="out-tono">Tono original</output>
+            <button class="boton boton--secundario boton--cuadrado" id="btn-tono-mas" type="button" aria-label="Subir un semitono"><svg class="icono"><use href="#i-mas"/></svg></button>
+          </div>
+          <p class="letra-chica">Si no llegas a alguna nota, baja o sube toda la obra.</p>
+        </fieldset>
+
+        <fieldset class="ajuste">
+          <legend>Micrófono</legend>
+          <label class="campo">
+            <span class="campo__rotulo">Cuál usar</span>
+            <select id="sel-micro"><option value="">El del sistema</option></select>
+          </label>
+          <label class="casilla"><input type="checkbox" id="chk-auriculares"><span>Llevo auriculares</span></label>
+          <p class="letra-chica">Con auriculares el micrófono solo te oye a ti y acierta más. Sin ellos, el navegador quita del micrófono lo que suena por los altavoces.</p>
+        </fieldset>
+
+        <fieldset class="ajuste">
+          <legend>Cómo te corrijo</legend>
+          <label class="casilla"><input type="checkbox" id="chk-exigente"><span>Exigente: menos margen de error</span></label>
+          <label class="casilla"><input type="checkbox" id="chk-octavas"><span>Dar por buena la nota una octava arriba o abajo</span></label>
+        </fieldset>
+      </div>
+    </details>
+  </section>
+</main>
+
+<footer class="pie">
+  <p id="creditos"></p>
+  <p>El sonido es sintetizado: no hay grabaciones. Nombres de nota: Do4 es el do central del piano y La4, el la del diapasón.</p>
+</footer>
+
+<noscript><p class="aviso">Esta aplicación necesita JavaScript para oír tu voz y hacer sonar el coro.</p></noscript>
+<script type="module" src="/js/app.js"></script>
+</body>
+</html>

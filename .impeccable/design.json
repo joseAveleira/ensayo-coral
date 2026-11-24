@@ -1,0 +1,532 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T14:17:41.414Z",
+  "title": "Design System: Ensayo coral",
+  "extensions": {
+    "colorMeta": {
+      "rubi": {
+        "role": "secondary",
+        "displayName": "Rubí (soprano, encendido)",
+        "canonical": "oklch(0.7 0.19 22)",
+        "tonalRamp": [
+          "oklch(0.15 0.19 22)",
+          "oklch(0.27 0.19 22)",
+          "oklch(0.38 0.19 22)",
+          "oklch(0.5 0.19 22)",
+          "oklch(0.62 0.19 22)",
+          "oklch(0.73 0.19 22)",
+          "oklch(0.85 0.19 22)",
+          "oklch(0.95 0.19 22)"
+        ]
+      },
+      "rubi-apagado": {
+        "role": "secondary",
+        "displayName": "Rubí apagado",
+        "canonical": "oklch(0.4 0.11 20)",
+        "tonalRamp": [
+          "oklch(0.15 0.11 20)",
+          "oklch(0.27 0.11 20)",
+          "oklch(0.38 0.11 20)",
+          "oklch(0.5 0.11 20)",
+          "oklch(0.62 0.11 20)",
+          "oklch(0.73 0.11 20)",
+          "oklch(0.85 0.11 20)",
+          "oklch(0.95 0.11 20)"
+        ]
+      },
+      "ambar": {
+        "role": "secondary",
+        "displayName": "Ámbar (contralto, encendido)",
+        "canonical": "oklch(0.84 0.155 85)",
+        "tonalRamp": [
+          "oklch(0.15 0.155 85)",
+          "oklch(0.27 0.155 85)",
+          "oklch(0.38 0.155 85)",
+          "oklch(0.5 0.155 85)",
+          "oklch(0.62 0.155 85)",
+          "oklch(0.73 0.155 85)",
+          "oklch(0.85 0.155 85)",
+          "oklch(0.95 0.155 85)"
+        ]
+      },
+      "ambar-apagado": {
+        "role": "secondary",
+        "displayName": "Ámbar apagado",
+        "canonical": "oklch(0.47 0.085 80)",
+        "tonalRamp": [
+          "oklch(0.15 0.085 80)",
+          "oklch(0.27 0.085 80)",
+          "oklch(0.38 0.085 80)",
+          "oklch(0.5 0.085 80)",
+          "oklch(0.62 0.085 80)",
+          "oklch(0.73 0.085 80)",
+          "oklch(0.85 0.085 80)",
+          "oklch(0.95 0.085 80)"
+        ]
+      },
+      "esmeralda": {
+        "role": "secondary",
+        "displayName": "Esmeralda (tenor, encendido)",
+        "canonical": "oklch(0.77 0.165 155)",
+        "tonalRamp": [
+          "oklch(0.15 0.165 155)",
+          "oklch(0.27 0.165 155)",
+          "oklch(0.38 0.165 155)",
+          "oklch(0.5 0.165 155)",
+          "oklch(0.62 0.165 155)",
+          "oklch(0.73 0.165 155)",
+          "oklch(0.85 0.165 155)",
+          "oklch(0.95 0.165 155)"
+        ]
+      },
+      "esmeralda-apagado": {
+        "role": "secondary",
+        "displayName": "Esmeralda apagado",
+        "canonical": "oklch(0.42 0.085 158)",
+        "tonalRamp": [
+          "oklch(0.15 0.085 158)",
+          "oklch(0.27 0.085 158)",
+          "oklch(0.38 0.085 158)",
+          "oklch(0.5 0.085 158)",
+          "oklch(0.62 0.085 158)",
+          "oklch(0.73 0.085 158)",
+          "oklch(0.85 0.085 158)",
+          "oklch(0.95 0.085 158)"
+        ]
+      },
+      "cobalto": {
+        "role": "secondary",
+        "displayName": "Cobalto (bajo, encendido)",
+        "canonical": "oklch(0.72 0.14 250)",
+        "tonalRamp": [
+          "oklch(0.15 0.14 250)",
+          "oklch(0.27 0.14 250)",
+          "oklch(0.38 0.14 250)",
+          "oklch(0.5 0.14 250)",
+          "oklch(0.62 0.14 250)",
+          "oklch(0.73 0.14 250)",
+          "oklch(0.85 0.14 250)",
+          "oklch(0.95 0.14 250)"
+        ]
+      },
+      "cobalto-apagado": {
+        "role": "secondary",
+        "displayName": "Cobalto apagado",
+        "canonical": "oklch(0.41 0.1 258)",
+        "tonalRamp": [
+          "oklch(0.15 0.1 258)",
+          "oklch(0.27 0.1 258)",
+          "oklch(0.38 0.1 258)",
+          "oklch(0.5 0.1 258)",
+          "oklch(0.62 0.1 258)",
+          "oklch(0.73 0.1 258)",
+          "oklch(0.85 0.1 258)",
+          "oklch(0.95 0.1 258)"
+        ]
+      },
+      "plomo": {
+        "role": "primary",
+        "displayName": "Plomo",
+        "canonical": "oklch(0.225 0.032 268)",
+        "tonalRamp": [
+          "oklch(0.15 0.032 268)",
+          "oklch(0.27 0.032 268)",
+          "oklch(0.38 0.032 268)",
+          "oklch(0.5 0.032 268)",
+          "oklch(0.62 0.032 268)",
+          "oklch(0.73 0.032 268)",
+          "oklch(0.85 0.032 268)",
+          "oklch(0.95 0.032 268)"
+        ]
+      },
+      "plomo-medio": {
+        "role": "primary",
+        "displayName": "Plomo medio",
+        "canonical": "oklch(0.33 0.035 268)",
+        "tonalRamp": [
+          "oklch(0.15 0.035 268)",
+          "oklch(0.27 0.035 268)",
+          "oklch(0.38 0.035 268)",
+          "oklch(0.5 0.035 268)",
+          "oklch(0.62 0.035 268)",
+          "oklch(0.73 0.035 268)",
+          "oklch(0.85 0.035 268)",
+          "oklch(0.95 0.035 268)"
+        ]
+      },
+      "plomo-suave": {
+        "role": "primary",
+        "displayName": "Plomo suave",
+        "canonical": "oklch(0.44 0.03 265)",
+        "tonalRamp": [
+          "oklch(0.15 0.03 265)",
+          "oklch(0.27 0.03 265)",
+          "oklch(0.38 0.03 265)",
+          "oklch(0.5 0.03 265)",
+          "oklch(0.62 0.03 265)",
+          "oklch(0.73 0.03 265)",
+          "oklch(0.85 0.03 265)",
+          "oklch(0.95 0.03 265)"
+        ]
+      },
+      "piedra": {
+        "role": "neutral",
+        "displayName": "Piedra",
+        "canonical": "oklch(0.953 0.007 255)",
+        "tonalRamp": [
+          "oklch(0.15 0.007 255)",
+          "oklch(0.27 0.007 255)",
+          "oklch(0.38 0.007 255)",
+          "oklch(0.5 0.007 255)",
+          "oklch(0.62 0.007 255)",
+          "oklch(0.73 0.007 255)",
+          "oklch(0.85 0.007 255)",
+          "oklch(0.95 0.007 255)"
+        ]
+      },
+      "cal": {
+        "role": "neutral",
+        "displayName": "Cal",
+        "canonical": "oklch(0.992 0.003 255)",
+        "tonalRamp": [
+          "oklch(0.15 0.003 255)",
+          "oklch(0.27 0.003 255)",
+          "oklch(0.38 0.003 255)",
+          "oklch(0.5 0.003 255)",
+          "oklch(0.62 0.003 255)",
+          "oklch(0.73 0.003 255)",
+          "oklch(0.85 0.003 255)",
+          "oklch(0.95 0.003 255)"
+        ]
+      },
+      "piedra-honda": {
+        "role": "neutral",
+        "displayName": "Piedra honda",
+        "canonical": "oklch(0.895 0.011 255)",
+        "tonalRamp": [
+          "oklch(0.15 0.011 255)",
+          "oklch(0.27 0.011 255)",
+          "oklch(0.38 0.011 255)",
+          "oklch(0.5 0.011 255)",
+          "oklch(0.62 0.011 255)",
+          "oklch(0.73 0.011 255)",
+          "oklch(0.85 0.011 255)",
+          "oklch(0.95 0.011 255)"
+        ]
+      },
+      "vano": {
+        "role": "neutral",
+        "displayName": "Vano",
+        "canonical": "oklch(0.175 0.03 268)",
+        "tonalRamp": [
+          "oklch(0.15 0.03 268)",
+          "oklch(0.27 0.03 268)",
+          "oklch(0.38 0.03 268)",
+          "oklch(0.5 0.03 268)",
+          "oklch(0.62 0.03 268)",
+          "oklch(0.73 0.03 268)",
+          "oklch(0.85 0.03 268)",
+          "oklch(0.95 0.03 268)"
+        ]
+      },
+      "vano-fila": {
+        "role": "neutral",
+        "displayName": "Vano fila",
+        "canonical": "oklch(0.21 0.031 268)",
+        "tonalRamp": [
+          "oklch(0.15 0.031 268)",
+          "oklch(0.27 0.031 268)",
+          "oklch(0.38 0.031 268)",
+          "oklch(0.5 0.031 268)",
+          "oklch(0.62 0.031 268)",
+          "oklch(0.73 0.031 268)",
+          "oklch(0.85 0.031 268)",
+          "oklch(0.95 0.031 268)"
+        ]
+      },
+      "vano-claro": {
+        "role": "neutral",
+        "displayName": "Vano claro",
+        "canonical": "oklch(0.27 0.035 268)",
+        "tonalRamp": [
+          "oklch(0.15 0.035 268)",
+          "oklch(0.27 0.035 268)",
+          "oklch(0.38 0.035 268)",
+          "oklch(0.5 0.035 268)",
+          "oklch(0.62 0.035 268)",
+          "oklch(0.73 0.035 268)",
+          "oklch(0.85 0.035 268)",
+          "oklch(0.95 0.035 268)"
+        ]
+      },
+      "luz": {
+        "role": "neutral",
+        "displayName": "Luz",
+        "canonical": "oklch(0.975 0.03 95)",
+        "tonalRamp": [
+          "oklch(0.15 0.03 95)",
+          "oklch(0.27 0.03 95)",
+          "oklch(0.38 0.03 95)",
+          "oklch(0.5 0.03 95)",
+          "oklch(0.62 0.03 95)",
+          "oklch(0.73 0.03 95)",
+          "oklch(0.85 0.03 95)",
+          "oklch(0.95 0.03 95)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Titular de cada vista, uno por pantalla (Grenze 600)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Titular de paso o de sección (Grenze 600)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Frase de resultado de la prueba de voz (Grenze 500)."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Entradilla y consejos."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texto corrido; medida máxima 60 a 62ch."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Botones, pestañas, chips y segmentos."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Rótulos de campo y de dato, en plomo suave."
+      },
+      "dato": {
+        "displayName": "Dato",
+        "purpose": "Nota pedida y nota cantada, con cifras tabulares."
+      }
+    },
+    "shadows": [
+      {
+        "name": "resplandor-nota-afinada",
+        "value": "canvas: shadowBlur 14px, shadowColor = vidrio de la cuerda",
+        "purpose": "Solo alrededor de una nota ya cantada y afinada dentro de la partitura. No hay ninguna sombra de caja en el sistema."
+      },
+      {
+        "name": "halo-de-la-voz",
+        "value": "canvas: trazo 9px del vidrio al 35 % bajo línea blanca de 3px; disco de 19px al 40 % tras el punto cuando se está afinado",
+        "purpose": "La voz del cantor, lo más luminoso de la pantalla."
+      }
+    ],
+    "motion": [
+      {
+        "name": "suave",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Curva de salida para el encendido de cristales, la pulsación de botón y el giro de la flecha de ajustes."
+      },
+      {
+        "name": "estado",
+        "value": "160ms",
+        "purpose": "Cambios de fondo, color y filete en mandos (140 a 180 ms observados)."
+      },
+      {
+        "name": "pulsacion",
+        "value": "120ms",
+        "purpose": "El botón baja 1 px al pulsar."
+      },
+      {
+        "name": "encendido-cristal",
+        "value": "520ms, 34ms de retraso por semitono",
+        "purpose": "Los cristales del ventanal se encienden de grave a agudo al terminar la medición."
+      },
+      {
+        "name": "aguja",
+        "value": "100ms linear",
+        "purpose": "Desplazamiento de la aguja del afinador."
+      },
+      {
+        "name": "movimiento-reducido",
+        "value": "transition-duration: 1ms; transition-delay: 0ms",
+        "purpose": "Con prefers-reduced-motion todas las transiciones quedan instantáneas."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "una-columna",
+        "value": "960px"
+      },
+      {
+        "name": "compacto",
+        "value": "720px"
+      },
+      {
+        "name": "ventanal-estrecho (container)",
+        "value": "520px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón principal",
+      "kind": "button",
+      "refersTo": "boton-principal",
+      "description": "La acción que hace avanzar el paso; una por pantalla. Variante grande de 60 px.",
+      "html": "<button class=\"ds-boton ds-boton-principal ds-boton-grande\" type=\"button\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"9\" y=\"3\" width=\"6\" height=\"11\" rx=\"3\"/><path d=\"M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7\"/></svg>Probar mi voz</button>",
+      "css": ".ds-boton { display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; min-height: 52px; padding: 0 1.25rem; border: 2px solid var(--plomo); border-radius: 4px; font-family: var(--fuente); font-size: 1rem; font-weight: 700; line-height: 1.15; cursor: pointer; transition: background-color 160ms, color 160ms, transform 120ms var(--suave); } .ds-boton:active { transform: translateY(1px); } .ds-boton:focus-visible { outline: 3px solid var(--plomo); outline-offset: 3px; } .ds-boton svg { width: 1.35em; height: 1.35em; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; } .ds-boton-principal { background: var(--plomo); color: var(--cal); } .ds-boton-principal:hover { background: var(--plomo-medio); } .ds-boton-grande { min-height: 60px; padding: 0 1.6rem; font-size: 1.15rem; }"
+    },
+    {
+      "name": "Botón secundario",
+      "kind": "button",
+      "refersTo": "boton-secundario",
+      "description": "Acción alternativa junto a la principal.",
+      "html": "<button class=\"ds-boton ds-boton-secundario\" type=\"button\">Borrar y repetir</button>",
+      "css": ".ds-boton { display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; min-height: 52px; padding: 0 1.25rem; border: 2px solid var(--plomo); border-radius: 4px; font-family: var(--fuente); font-size: 1rem; font-weight: 700; line-height: 1.15; cursor: pointer; transition: background-color 160ms, color 160ms, transform 120ms var(--suave); } .ds-boton:active { transform: translateY(1px); } .ds-boton:focus-visible { outline: 3px solid var(--plomo); outline-offset: 3px; } .ds-boton svg { width: 1.35em; height: 1.35em; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; } .ds-boton-secundario { background: var(--cal); color: var(--plomo); } .ds-boton-secundario:hover { background: var(--piedra-honda); }"
+    },
+    {
+      "name": "Botón de texto",
+      "kind": "button",
+      "refersTo": "boton-texto",
+      "description": "Salir o cancelar, sin filete.",
+      "html": "<button class=\"ds-boton ds-boton-texto\" type=\"button\">Cancelar</button>",
+      "css": ".ds-boton { display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; min-height: 52px; padding: 0 1.25rem; border: 2px solid var(--plomo); border-radius: 4px; font-family: var(--fuente); font-size: 1rem; font-weight: 700; line-height: 1.15; cursor: pointer; transition: background-color 160ms, color 160ms, transform 120ms var(--suave); } .ds-boton:active { transform: translateY(1px); } .ds-boton:focus-visible { outline: 3px solid var(--plomo); outline-offset: 3px; } .ds-boton svg { width: 1.35em; height: 1.35em; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; } .ds-boton-texto { min-height: 48px; padding: 0 0.5rem; border-color: transparent; background: none; color: var(--plomo); text-decoration: underline; text-underline-offset: 0.2em; } .ds-boton-texto:hover { background: var(--piedra-honda); }"
+    },
+    {
+      "name": "Pestañas",
+      "kind": "nav",
+      "refersTo": "pestana",
+      "description": "Las dos secciones de la aplicación, en la cabecera.",
+      "html": "<nav class=\"ds-pestanas\" aria-label=\"Secciones\"><a class=\"ds-pestana\" href=\"#\" aria-current=\"page\">Mi voz</a><a class=\"ds-pestana\" href=\"#\">Ensayo</a></nav>",
+      "css": ".ds-pestanas { display: flex; gap: 0.35rem; font-family: var(--fuente); } .ds-pestana { display: inline-flex; align-items: center; min-height: 48px; padding: 0 1.1rem; border: 2px solid transparent; border-radius: 4px; color: var(--plomo); font-weight: 700; text-decoration: none; white-space: nowrap; transition: background-color 160ms, border-color 160ms; } .ds-pestana:hover { border-color: var(--plomo); } .ds-pestana:focus-visible { outline: 3px solid var(--plomo); outline-offset: 3px; } .ds-pestana[aria-current=\"page\"] { background: var(--plomo); color: var(--cal); border-color: var(--plomo); }"
+    },
+    {
+      "name": "Selector de cuerda",
+      "kind": "chip",
+      "refersTo": "cuerda",
+      "description": "Cuatro vidrios para elegir cuerda; la elegida se llena de su vidrio y muestra una marca.",
+      "html": "<fieldset class=\"ds-cuerdas\"><label class=\"ds-cuerda ds-tinte-rubi\"><input type=\"radio\" name=\"ds-cuerda\"><span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>Soprano</span></label><label class=\"ds-cuerda ds-tinte-ambar\"><input type=\"radio\" name=\"ds-cuerda\" checked><span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>Contralto</span></label><label class=\"ds-cuerda ds-tinte-esmeralda\"><input type=\"radio\" name=\"ds-cuerda\"><span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>Tenor</span></label><label class=\"ds-cuerda ds-tinte-cobalto\"><input type=\"radio\" name=\"ds-cuerda\"><span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg>Bajo</span></label></fieldset>",
+      "css": ".ds-tinte-rubi { --c: var(--rubi); --c-apagado: var(--rubi-apagado); } .ds-tinte-ambar { --c: var(--ambar); --c-apagado: var(--ambar-apagado); } .ds-tinte-esmeralda { --c: var(--esmeralda); --c-apagado: var(--esmeralda-apagado); } .ds-tinte-cobalto { --c: var(--cobalto); --c-apagado: var(--cobalto-apagado); } .ds-cuerdas { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; border: 0; font-family: var(--fuente); color: var(--plomo); } .ds-cuerda { position: relative; } .ds-cuerda input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; } .ds-cuerda span { display: inline-flex; align-items: center; gap: 0.55rem; min-height: 52px; padding: 0 1.1rem 0 0.85rem; border: 2px solid var(--plomo); border-radius: 4px; background: var(--cal); font-weight: 700; transition: background-color 180ms; } .ds-cuerda span::before { content: \"\"; width: 0.85rem; height: 1.3rem; border: 2px solid var(--plomo); border-radius: 50% 50% 1px 1px / 45% 45% 1px 1px; background: var(--c); } .ds-cuerda span svg { display: none; width: 1.15rem; height: 1.3rem; stroke-width: 3; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; } .ds-cuerda:hover span { background: var(--piedra-honda); } .ds-cuerda input:checked + span { background: var(--c); } .ds-cuerda input:checked + span::before { display: none; } .ds-cuerda input:checked + span svg { display: block; } .ds-cuerda input:focus-visible + span { outline: 3px solid var(--plomo); outline-offset: 3px; }"
+    },
+    {
+      "name": "Segmentos",
+      "kind": "input",
+      "refersTo": "segmento",
+      "description": "Opciones excluyentes pegadas; la marcada invierte a plomo.",
+      "html": "<fieldset class=\"ds-segmentos\"><legend>Mi cuerda suena</legend><label><input type=\"radio\" name=\"ds-seg\"><span>Fuerte</span></label><label><input type=\"radio\" name=\"ds-seg\" checked><span>Suave</span></label><label><input type=\"radio\" name=\"ds-seg\"><span>Callada</span></label></fieldset>",
+      "css": ".ds-segmentos { display: flex; flex-wrap: wrap; margin: 0; padding: 0; border: 0; font-family: var(--fuente); color: var(--plomo); } .ds-segmentos legend { padding: 0; margin-bottom: 0.2rem; font-size: 0.9rem; font-weight: 600; color: var(--plomo-suave); } .ds-segmentos label { position: relative; } .ds-segmentos label + label { margin-left: -2px; } .ds-segmentos input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; } .ds-segmentos span { display: inline-flex; align-items: center; min-height: 48px; padding: 0 1rem; border: 2px solid var(--plomo); background: var(--cal); font-weight: 700; transition: background-color 160ms, color 160ms; } .ds-segmentos label:first-of-type span { border-radius: 4px 0 0 4px; } .ds-segmentos label:last-of-type span { border-radius: 0 4px 4px 0; } .ds-segmentos label:hover span { background: var(--piedra-honda); } .ds-segmentos input:checked + span { background: var(--plomo); color: var(--cal); } .ds-segmentos input:focus-visible + span { position: relative; z-index: 1; outline: 3px solid var(--plomo); outline-offset: 3px; }"
+    },
+    {
+      "name": "Selector desplegable",
+      "kind": "input",
+      "refersTo": "selector",
+      "description": "Campo con rótulo encima y flecha de trazo propia.",
+      "html": "<label class=\"ds-campo\"><span class=\"ds-campo-rotulo\">Frase</span><select class=\"ds-selector\"><option>Toda la obra</option><option>1. Ave verum corpus</option></select></label>",
+      "css": ".ds-campo { display: grid; gap: 0.2rem; font-family: var(--fuente); } .ds-campo-rotulo { font-size: 0.9rem; font-weight: 600; color: var(--plomo-suave); } .ds-selector { min-height: 48px; max-width: 100%; padding: 0 2.2rem 0 0.85rem; border: 2px solid var(--plomo); border-radius: 4px; background: var(--cal) url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23171b2b' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E\") no-repeat right 0.6rem center / 1.2rem; color: var(--plomo); font: inherit; font-weight: 600; appearance: none; cursor: pointer; } .ds-selector:focus-visible { outline: 3px solid var(--plomo); outline-offset: 3px; }"
+    },
+    {
+      "name": "Lectura (ventana oscura)",
+      "kind": "card",
+      "refersTo": "ventana-oscura",
+      "description": "Ventana oscura con la nota que suena y la marca medida; dentro, texto en luz.",
+      "html": "<div class=\"ds-lectura ds-tinte-ambar\"><div class=\"ds-lectura-nota\">La3</div><p class=\"ds-lectura-marca\">La más grave hasta ahora <strong>Sol3</strong></p><div class=\"ds-nivel\"><div class=\"ds-nivel-barra\"></div></div></div>",
+      "css": ".ds-tinte-rubi { --c: var(--rubi); --c-apagado: var(--rubi-apagado); } .ds-tinte-ambar { --c: var(--ambar); --c-apagado: var(--ambar-apagado); } .ds-tinte-esmeralda { --c: var(--esmeralda); --c-apagado: var(--esmeralda-apagado); } .ds-tinte-cobalto { --c: var(--cobalto); --c-apagado: var(--cobalto-apagado); } .ds-lectura { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.5rem 1.25rem; align-items: center; padding: 1rem 1.25rem; border: 3px solid var(--plomo); border-radius: 6px; background: var(--vano); color: var(--luz); font-family: var(--fuente); } .ds-lectura-nota { grid-row: span 2; min-width: 4.2ch; font-size: 3.1rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; } .ds-lectura-marca { margin: 0; font-size: 1rem; } .ds-lectura-marca strong { display: block; font-size: 1.35rem; color: var(--c); } .ds-nivel { height: 8px; border-radius: 2px; background: var(--vano-claro); overflow: hidden; } .ds-nivel-barra { height: 100%; background: var(--luz); transform: scaleX(0.55); transform-origin: left; }"
+    },
+    {
+      "name": "Veredicto y afinador",
+      "kind": "custom",
+      "refersTo": "veredicto",
+      "description": "La instrucción del momento con su icono (aquí \"Sube un poco\") y el afinador con zona de vidrio y aguja de plomo. En \"Afinado\" el veredicto recibe fondo del vidrio y filete.",
+      "html": "<div class=\"ds-marcador ds-tinte-esmeralda\"><p class=\"ds-veredicto\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 19V5M5.5 11.5L12 5l6.5 6.5\"/></svg><span>Sube un poco</span></p><div class=\"ds-afinador\"><span>bajo</span><div class=\"ds-afinador-carril\"><div class=\"ds-afinador-zona\"></div><div class=\"ds-afinador-aguja\"></div></div><span>alto</span></div></div>",
+      "css": ".ds-tinte-rubi { --c: var(--rubi); --c-apagado: var(--rubi-apagado); } .ds-tinte-ambar { --c: var(--ambar); --c-apagado: var(--ambar-apagado); } .ds-tinte-esmeralda { --c: var(--esmeralda); --c-apagado: var(--esmeralda-apagado); } .ds-tinte-cobalto { --c: var(--cobalto); --c-apagado: var(--cobalto-apagado); } .ds-marcador { display: grid; gap: 0.7rem; justify-items: center; font-family: var(--fuente); color: var(--plomo); } .ds-veredicto { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 3rem; margin: 0; padding: 0 1.1rem; border: 2px solid transparent; border-radius: 4px; font-size: 1.7rem; font-weight: 700; line-height: 1; } .ds-veredicto svg { width: 1.35em; height: 1.35em; stroke-width: 2; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; } .ds-marcador:hover .ds-veredicto { background: var(--c); border-color: var(--plomo); } .ds-afinador { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 0.75rem; align-items: center; width: 100%; max-width: 34rem; font-size: 0.85rem; font-weight: 600; color: var(--plomo-suave); } .ds-afinador-carril { position: relative; height: 18px; border: 2px solid var(--plomo); border-radius: 3px; background: var(--cal); } .ds-afinador-zona { position: absolute; inset-block: 0; left: 50%; width: 20%; transform: translateX(-50%); background: var(--c); opacity: 0.6; } .ds-afinador-aguja { position: absolute; top: -8px; bottom: -8px; left: 34%; width: 7px; margin-left: -3.5px; border-radius: 2px; background: var(--plomo); transition: left 100ms linear; } .ds-marcador:hover .ds-afinador-aguja { left: 50%; }"
+    },
+    {
+      "name": "Tira de notas",
+      "kind": "custom",
+      "refersTo": "ventana-oscura",
+      "description": "Resumen de una frase: un cristal por nota, encendido si salió afinada, apagado con flecha si hay que subir o bajar.",
+      "html": "<div class=\"ds-tira ds-tinte-cobalto\"><span class=\"ds-tira-nota ds-es-bien\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg></span><span class=\"ds-tira-nota ds-es-bien\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg></span><span class=\"ds-tira-nota ds-es-baja\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 19V5M5.5 11.5L12 5l6.5 6.5\"/></svg></span><span class=\"ds-tira-nota ds-es-bien\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg></span><span class=\"ds-tira-nota\"></span></div>",
+      "css": ".ds-tinte-rubi { --c: var(--rubi); --c-apagado: var(--rubi-apagado); } .ds-tinte-ambar { --c: var(--ambar); --c-apagado: var(--ambar-apagado); } .ds-tinte-esmeralda { --c: var(--esmeralda); --c-apagado: var(--esmeralda-apagado); } .ds-tinte-cobalto { --c: var(--cobalto); --c-apagado: var(--cobalto-apagado); } .ds-tira { display: flex; flex-wrap: wrap; gap: 3px; width: fit-content; padding: 4px; border: 2px solid var(--plomo); border-radius: 3px; background: var(--vano); } .ds-tira-nota { display: grid; place-items: center; width: 1.6rem; height: 2rem; border-radius: 2px; background: var(--vano-claro); color: var(--luz); } .ds-tira-nota.ds-es-bien { background: var(--c); } .ds-tira-nota.ds-es-baja { background: var(--c-apagado); } .ds-tira-nota svg { width: 1.1rem; height: 1.1rem; stroke-width: 3; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "La Vidriera",
+    "overview": "La página es un muro de piedra clara y fría en el que se abren ventanas oscuras. Dentro de esas ventanas hay cristales de cuatro vidrios, uno por cuerda del coro, y lo único que los enciende es la voz de quien canta. Todo lo demás (texto, botones, filetes) es plomo: un azul negro que dibuja, separa y manda, pero no brilla. La pantalla no juzga con rojo y verde; enseña qué cristales están apagados y cuáles has encendido tú.\n\nEs una herramienta de trabajo para cantores aficionados, muchos de ellos mayores, así que la densidad es baja y el tamaño alto: la raíz tipográfica está subida al 112,5 %, los mandos miden entre 44 y 60 px de alto y cada estado se dice con una palabra o una flecha además del color. Hay una sola familia de interfaz y un único tipo de titular. El sistema rechaza de forma expresa dos aspectos: el afinador oscuro con neón y el papel crema con serifa \"de música clásica\".\n\nLa vidriera no es decoración: es la codificación. El vidrio saturado significa \"nota de una cuerda\"; el vidrio apagado, \"nota que la cuerda pide\"; el vidrio encendido, \"nota a la que llegas o que has afinado\". Fuera de ese significado, el color de cuerda no se usa.",
+    "keyCharacteristics": [
+      "Piedra clara y fría como fondo; superficies de mando un punto más blancas (cal).",
+      "Plomo azul negro para todo el texto y para filetes de 2 px (mandos, divisiones internas) y 3 px (ventanas y cortes de página).",
+      "Cuatro vidrios, uno por cuerda: rubí soprano, ámbar contralto, esmeralda tenor, cobalto bajo; cada uno con su par apagado.",
+      "Ventanas oscuras abiertas en la página: solo dentro de ellas hay luz.",
+      "Estado en dos valores, apagado o encendido, siempre acompañado de palabra, flecha o marca.",
+      "Texto grande, mandos amplios, sin sombras y con movimiento mínimo."
+    ],
+    "rules": [
+      {
+        "name": "Regla del Cristal",
+        "body": "El color de cuerda significa cuerda y nada más. No hay vidrio en botones genéricos, enlaces, titulares ni adornos; si una superficie no pertenece a una cuerda, es plomo sobre piedra.",
+        "section": "colors"
+      },
+      {
+        "name": "Regla de Apagado y Encendido",
+        "body": "El estado tiene dos valores: cristal apagado o cristal encendido, dentro del mismo vidrio. Nunca rojo para el fallo ni verde para el acierto; rubí y esmeralda son cuerdas, no veredictos.",
+        "section": "colors"
+      },
+      {
+        "name": "Regla de Nunca Solo el Color",
+        "body": "Todo estado lleva además una palabra, una flecha o una marca: \"Afinado\" con su marca, \"Sube\" y \"Baja\" con su flecha, la marca de verificación en el chip elegido, la flecha en la nota que no salió.",
+        "section": "colors"
+      },
+      {
+        "name": "Regla de la Luz Dentro",
+        "body": "El texto en luz (`luz`) solo existe dentro de una ventana oscura. Sobre piedra, cal o vidrio encendido el texto es siempre plomo. Fuera de una ventana, la luz y el vidrio apagado solo asoman como muestra con filete de plomo: la leyenda y la etiqueta del rayo.",
+        "section": "colors"
+      },
+      {
+        "name": "Regla del Titular Único",
+        "body": "Grenze solo en titulares (vista, paso, resultado, nombre de la obra, inicial del óculo). Rótulos, mandos, datos y cifras son siempre Atkinson.",
+        "section": "typography"
+      },
+      {
+        "name": "Regla del Suelo de Lectura",
+        "body": "El texto más pequeño es 0.85rem (unos 15 px) y en la partitura en movimiento 14 a 15 px reales. Nada informativo por debajo de eso.",
+        "section": "typography"
+      },
+      {
+        "name": "Regla de la Instrucción",
+        "body": "La corrección se escribe como lo que hay que hacer (\"Sube\", \"Sube un poco\", \"Baja\", \"Baja un poco\", \"Escucha\"), nunca como el error cometido. El acierto se nombra: \"Afinado\".",
+        "section": "typography"
+      },
+      {
+        "name": "Regla del Hueco",
+        "body": "La profundidad es un vano abierto en el muro, no una tarjeta levantada. Cero sombras de caja en todo el sistema.",
+        "section": "elevation"
+      },
+      {
+        "name": "Regla del Resplandor Ganado",
+        "body": "El resplandor solo existe dentro de una ventana oscura y solo lo produce la voz: una nota afinada o el punto donde se canta. Nada brilla en reposo, y nada brilla sobre piedra.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do escribir todo el texto sobre piedra, cal o vidrio encendido en plomo, y todo el texto dentro de una ventana oscura en luz.",
+      "Do acompañar cada estado con palabra, flecha o marca; el color solo refuerza.",
+      "Do dar a cada superficie de cuerda su clase de tinte y pedir \"el vidrio de la cuerda\", nunca un vidrio fijo.",
+      "Do formular la corrección como instrucción: \"Sube\", \"Baja\", \"Escucha\".",
+      "Do mantener los mandos entre 44 y 60 px de alto y el texto en 0.85rem o más, con la raíz al 112,5 %.",
+      "Do separar con filete de plomo: 2 px dentro de una tarea, 3 px para ventanas y cortes de página.",
+      "Do usar el mismo anillo de foco en todo: plomo, 3 px, separado 3 px.",
+      "Do respetar la preferencia de movimiento reducido; las transiciones son de estado (120 a 200 ms) y el único encendido largo (520 ms) es el de los cristales."
+    ],
+    "donts": [
+      "Don't usar rojo para el fallo ni verde para el acierto: rubí y esmeralda son soprano y tenor.",
+      "Don't poner vidrio de cuerda en mandos, titulares o adornos que no hablen de una cuerda.",
+      "Don't convertir la página en un afinador oscuro con neón: lo oscuro es una ventana con marco, no el fondo, y el resplandor solo lo gana la voz.",
+      "Don't recurrir al papel crema con serifa \"de música clásica\": la piedra es fría y el titular es Grenze, no una romana de libro.",
+      "Don't añadir sombras de caja, tarjetas elevadas, píldoras ni radios por encima de 6px.",
+      "Don't usar Grenze en rótulos, botones, datos o cifras.",
+      "Don't escribir el error (\"Estás bajo\", \"Fallaste\"); se escribe lo que hay que hacer.",
+      "Don't teñir el texto con el vidrio para destacarlo; para eso está el subrayado de vidrio."
+    ]
+  }
+}

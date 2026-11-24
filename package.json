@@ -1,0 +1,20 @@
+{
+  "name": "ensayo-coral",
+  "version": "1.0.0",
+  "description": "Ensayo coral con micrófono: comprueba si llegas a las notas y afina tu voz sobre partituras de dominio público.",
+  "type": "module",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "validar": "node tools/validar-partitura.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Jose Aveleira",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseAveleira/ensayo-coral.git"
+  }
+}
