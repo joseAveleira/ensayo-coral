@@ -30,7 +30,7 @@ function alturas(notas) {
 }
 
 export async function cargarPartitura(id) {
-  const respuesta = await fetch(`/api/partituras/${id}`);
+  const respuesta = await fetch(`partituras/${id}.json`);
   if (!respuesta.ok) throw new Error('No se pudo cargar la partitura');
   const p = await respuesta.json();
 

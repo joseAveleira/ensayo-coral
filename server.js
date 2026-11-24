@@ -4,16 +4,18 @@
 //   node server.js --no-abrir   arranca sin abrir el navegador
 //   node server.js --puerto 8080   usa otro puerto (por defecto, 3000)
 //
-// Sirve la aplicación (carpeta public/) y una pequeña API con las partituras
-// que haya en la carpeta partituras/. Añadir una obra nueva es dejar ahí otro
-// archivo .json con el mismo formato.
+// Sirve la aplicación (carpeta public/) y las partituras que haya en la carpeta
+// partituras/, con las mismas direcciones que la versión web estática
+// (tools/construir-web.mjs): partituras/indice.json y partituras/<obra>.json.
+// Añadir una obra nueva es dejar ahí otro archivo .json con el mismo formato.
 
 import http from 'node:http';
-import { readFile, readdir, stat } from 'node:fs/promises';
+import { readFile, stat } from 'node:fs/promises';
 import { createReadStream } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { exec } from 'node:child_process';
+import { listarPartituras } from './tools/indice-partituras.mjs';
 
 const RAIZ = path.dirname(fileURLToPath(import.meta.url));
 const PUBLICO = path.join(RAIZ, 'public');
@@ -49,32 +51,11 @@ function enviarJson(res, estado, datos) {
   res.end(cuerpo);
 }
 
-async function listarPartituras() {
-  const archivos = (await readdir(PARTITURAS)).filter((f) => f.endsWith('.json')).sort();
-  const lista = [];
-  for (const archivo of archivos) {
-    try {
-      const p = JSON.parse(await readFile(path.join(PARTITURAS, archivo), 'utf8'));
-      lista.push({
-        id: archivo.replace(/\.json$/, ''),
-        titulo: p.titulo,
-        compositor: p.compositor,
-        catalogo: p.catalogo ?? '',
-        anio: p.anio ?? null,
-        voces: (p.voces ?? []).map((v) => v.nombre),
-      });
-    } catch (error) {
-      console.warn(`  (se ignora ${archivo}: ${error.message})`);
-    }
+async function atenderPartituras(ruta, res) {
+  if (ruta === '/partituras/indice.json') {
+    return enviarJson(res, 200, await listarPartituras(PARTITURAS));
   }
-  return lista;
-}
-
-async function atenderApi(ruta, res) {
-  if (ruta === '/api/partituras') {
-    return enviarJson(res, 200, await listarPartituras());
-  }
-  const m = ruta.match(/^\/api\/partituras\/([a-z0-9-]+)$/);
+  const m = ruta.match(/^\/partituras\/([a-z0-9-]+)\.json$/);
   if (m) {
     try {
       const texto = await readFile(path.join(PARTITURAS, `${m[1]}.json`), 'utf8');
@@ -124,7 +105,7 @@ const servidor = http.createServer(async (req, res) => {
       res.writeHead(405).end('Método no permitido');
       return;
     }
-    if (pathname.startsWith('/api/')) await atenderApi(pathname, res);
+    if (pathname.startsWith('/partituras/')) await atenderPartituras(pathname, res);
     else await atenderArchivo(pathname, res);
   } catch (error) {
     console.error(error);

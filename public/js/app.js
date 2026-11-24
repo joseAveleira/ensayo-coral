@@ -33,13 +33,13 @@ function leerEstado() {
 async function arrancar() {
   let partitura;
   try {
-    const lista = await (await fetch('/api/partituras')).json();
+    const lista = await (await fetch('partituras/indice.json')).json();
     partitura = await cargarPartitura(lista[0].id);
   } catch (error) {
     console.error(error);
     const aviso = document.createElement('p');
     aviso.className = 'aviso';
-    aviso.textContent = 'No he podido cargar la partitura. Comprueba que el programa sigue en marcha y recarga la página.';
+    aviso.textContent = 'No he podido cargar la partitura. Comprueba la conexión (o que el programa sigue en marcha) y recarga la página.';
     document.querySelector('main').replaceChildren(aviso);
     aviso.style.margin = '2rem auto';
     return;
