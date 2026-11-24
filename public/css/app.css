@@ -208,7 +208,7 @@ h2:focus, p:focus { outline: none; }
 
 .fila-botones { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
 
-.campo { display: grid; gap: 0.2rem; }
+.campo { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.2rem; }
 .campo__rotulo { padding: 0; font-size: 0.9rem; font-weight: 600; color: var(--plomo-suave); }
 .campo__rotulo output { color: var(--plomo); font-weight: 700; }
 
@@ -586,7 +586,9 @@ fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
 .ajustes summary .icono { transition: transform 200ms var(--suave); }
 .ajustes[open] summary .icono { transform: rotate(90deg); }
 .ajustes__rejilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.5rem 2.5rem; padding: 0.5rem 0 1rem; }
-.ajuste { display: grid; gap: 0.25rem; align-content: start; }
+.ajuste { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.25rem; align-content: start; }
+/* Los nombres de micrófono suelen ser largos: el desplegable no pasa de su columna. */
+.ajuste select { width: 100%; }
 .ajuste legend { padding: 0; margin-bottom: 0.35rem; font-weight: 700; font-size: 1.05rem; }
 .ajuste__casillas { display: grid; }
 .paso-a-paso { display: flex; align-items: center; gap: 0.75rem; }
