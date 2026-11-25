@@ -205,3 +205,7 @@ Solo música de dominio público.
 - Tipografías: Atkinson Hyperlegible Next y Grenze (SIL Open Font License), servidas por Google Fonts.
 
 Hecha por [Jose Aveleira](https://github.com/joseAveleira) con [Claude Code](https://claude.com/claude-code), como demostración de lo que se puede construir programando con inteligencia artificial.
+
+## Licencia
+
+El código es libre y gratuito, con licencia [MIT](LICENSE): puedes usarlo, copiarlo, modificarlo y repartirlo como quieras, también con fines comerciales, siempre que conserves el aviso de copyright. La partitura del *Ave verum* conserva su propia licencia CC BY 4.0 (ver «Créditos»).

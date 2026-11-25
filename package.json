@@ -14,6 +14,7 @@
     "node": ">=18"
   },
   "author": "Jose Aveleira",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joseAveleira/ensayo-coral.git"
