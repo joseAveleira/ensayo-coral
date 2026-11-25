@@ -604,6 +604,9 @@ fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
 }
 .pie p { max-width: 78rem; margin-inline: auto; }
 .pie p + p { margin-top: 0.3rem; }
+.pie .pie__abierta { margin-top: 0.8rem; color: var(--plomo); }
+.pie a { color: inherit; font-weight: 700; text-underline-offset: 0.15em; overflow-wrap: anywhere; }
+.pie a:hover { text-decoration-thickness: 2px; }
 
 /* ── Pantallas estrechas ──────────────────────────── */
 
